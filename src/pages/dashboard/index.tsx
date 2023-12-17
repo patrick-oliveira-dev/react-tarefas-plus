@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next"
+import { GetServerSideProps, GetStaticProps } from "next"
 import { ChangeEvent, FormEvent, useState, useEffect } from 'react'
 import Link from 'next/link'
 import Head from "next/head"
@@ -107,8 +107,8 @@ export default function Dashboard({user}: HomeProps) {
             <main className={styles.main}>
                 <section className={styles.content}>
                     <div className={styles.contentForm}>
-                        <h1 className={styles.tile}>
-                            Qual sua tarefa?
+                        <h1 className={styles.title}>
+                            Digite a tarefa
                         </h1>
 
                         <form onSubmit={handleRegisterTask}>
